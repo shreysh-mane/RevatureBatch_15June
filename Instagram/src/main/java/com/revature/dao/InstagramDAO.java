@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import com.revature.model.User;
 
-public class InstagramDAO {
+public class InstagramDAO implements InstagramDAOInterface{
 	
 	
 	private static ArrayList<User> users=new ArrayList<User>();

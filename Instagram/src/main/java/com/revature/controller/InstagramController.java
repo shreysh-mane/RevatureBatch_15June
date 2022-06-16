@@ -4,12 +4,13 @@ import java.util.ArrayList;
 
 import com.revature.model.User;
 import com.revature.service.InstagramService;
+import com.revature.service.InstagramServiceInterface;
 
 public class InstagramController {
 
 	
 	public ArrayList<User> registerUserController(User user) {
-		InstagramService is=new InstagramService();
+		InstagramServiceInterface is=new InstagramService();
 		ArrayList<User> users=is.registerUserService(user);
 		return users;
 	}
@@ -17,7 +18,7 @@ public class InstagramController {
 	public ArrayList<User> deleteUserController(String name) {
 		// TODO Auto-generated method stub
 		
-		InstagramService is=new InstagramService();
+		InstagramServiceInterface is=new InstagramService();
 		ArrayList<User> users=is.deleteUserService(name);
 		return users;
 		
