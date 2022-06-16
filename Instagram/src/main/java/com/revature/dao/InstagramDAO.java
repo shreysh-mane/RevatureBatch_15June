@@ -6,6 +6,10 @@ import com.revature.model.User;
 
 public class InstagramDAO implements InstagramDAOInterface{
 	
+	public InstagramDAO() {
+		System.out.println("DAO object created");
+	}
+	
 	
 	private static ArrayList<User> users=new ArrayList<User>();
 	

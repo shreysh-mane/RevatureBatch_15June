@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import com.revature.controller.InstagramController;
+import com.revature.controller.InstagramControllerInterface;
 import com.revature.model.User;
+import com.revature.utility.ControllerFactory;
 
 /**
  * Hello world!
@@ -33,7 +35,7 @@ public class App
        		user.setName(Name);
        		user.setAdd(add);
        		
-       		InstagramController ic=new InstagramController();
+       		InstagramControllerInterface ic=ControllerFactory.getInstance();
        		ArrayList<User> users=ic.registerUserController(user);
        		
        		System.out.println("Users name");
@@ -45,7 +47,7 @@ public class App
     	   	System.out.println("Enter the name");
       		String Name=scn.next();
       		
-      		InstagramController ic=new InstagramController();
+      		InstagramControllerInterface ic=ControllerFactory.getInstance();
       		ArrayList<User> users=ic.deleteUserController(Name);
       		
       		System.out.println("Users name");
