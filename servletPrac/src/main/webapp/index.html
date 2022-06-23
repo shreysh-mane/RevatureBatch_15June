@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+  		<form action="HSLogin" method="">
+  		
+  		Name:<input type="text" name="userName">
+  		
+	
+  		<button type="submit">Send Info</button>
+
+  		</form>
+  		
+  		<p id="demo">Click me.</p>
+  	
+  	<script>
+  	
+  	function myFunction() {
+  		fetch("HSLogin?userName=shreysh");
+  	  	element.innerHTML = "YOU CLICKED ME!";
+  	}
+  	
+	let element=document.getElementById("demo");
+	element.addEventListener("click", myFunction);
+
+	
+</script>
+  	
+</body>
+</html>
