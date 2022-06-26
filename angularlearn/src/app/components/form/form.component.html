@@ -1,0 +1,12 @@
+<p>form works!</p>
+
+<form #userForm="ngForm" (ngSubmit)="getData(userForm.value)">
+    <!-- ngModel used to add feild to form -->
+    <input type="text" name="user" ngModel>
+    <br><br>
+    <input tyep="text" name="address" ngModel>
+    <br><br>
+    <input type="password" name="upass" ngModel>
+    <br><br>
+    <button>Submit</button>
+</form>

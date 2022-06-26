@@ -1,0 +1,12 @@
+{{name}}
+
+
+<p>test works!</p>
+
+<input #myname [type]="type" name="username">
+<button (click)="onClick(myname.value)">Click here</button>
+
+<input [(ngModel)]="username" type="text"> 
+
+<img [src]="imgurl">
+{{username}}

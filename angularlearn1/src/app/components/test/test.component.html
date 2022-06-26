@@ -1,0 +1,22 @@
+<p>test works!</p>
+<!-- interpolation -->
+<h1>Hello {{username}}</h1>
+<h2>{{number}}</h2>
+
+<!-- <img [src]="imgurl"> -->
+
+<!-- property Binding -->
+<input [type]="typevar" name="username">
+<br>
+<br>
+
+<!-- template literal -->
+<input #mySearchbox type="text" name="uname">
+<!-- event binding -->
+<button (click)="changeName(mySearchbox.value)">Click here</button>
+
+<br><br>
+
+<!-- 2way data binding -->
+<input type ="password" [(ngModel)]="twowaydata" >
+{{twowaydata}}

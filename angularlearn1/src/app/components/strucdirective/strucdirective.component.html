@@ -1,0 +1,30 @@
+<h2 *ngIf="value">
+    Hello
+</h2>
+
+<div *ngIf="5>10; else elseBlock">  
+    5 is greater than 10....
+</div>  
+<ng-template #elseBlock>  
+    10 is greater than 5... 
+</ng-template>  
+
+<!-- ngswitch -->
+<div [ngSwitch]="name">
+    <h2 *ngSwitchCase="'shreysh'">shreysh</h2>
+    <h2 *ngSwitchCase="'yash'">yash</h2>
+
+</div>
+
+<div [ngSwitch]="num">
+    <h2 *ngSwitchCase="1">shreysh</h2>
+    <h2 *ngSwitchCase="2">yash</h2>
+
+</div>
+
+
+<!-- ngFor -->
+<div *ngFor="let color of colors">
+{{color}}
+
+</div>
