@@ -1,13 +1,21 @@
 package com.revature.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="userdetails")
 public class Userdata {
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long userId;
 	
+	
+	@Column(name="userlocation")
 	private String userAddress;
 	private String userName;
 	

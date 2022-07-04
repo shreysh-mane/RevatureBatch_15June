@@ -13,8 +13,8 @@ public class Test1 {
 
 	public static void main(String[] args) {
 		
-		
 		saveUser();
+	
 	}
 	
 	public static void deleteUser() {
@@ -81,13 +81,13 @@ public class Test1 {
 		
 //		Creating the object
 		Userdata user=new Userdata();
-		user.setUserId(1);
+//		user.setUserId(1);
 		user.setUserName("chitrak");
 		user.setUserAddress("kolkata");
 		user.setUseremail("chitrak@gmail.com");
 		
 		Userdata user1=new Userdata();
-		user1.setUserId(2);
+//		user1.setUserId(2);
 		user1.setUserName("syed");
 		user1.setUserAddress("kolkata");
 		user1.setUseremail("chitrak@gmail.com");
@@ -104,7 +104,7 @@ public class Test1 {
 		
 //		saving the object in database
 //		session.save(user);
-		session.saveOrUpdate(user1);
+		session.save(user1);
 //		to commit your changes
 		session.getTransaction().commit();
 		session.close();
