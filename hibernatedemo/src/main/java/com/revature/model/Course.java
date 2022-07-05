@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
 @Entity
@@ -14,7 +15,8 @@ public class Course {
 	
 	private String cname;
 	
-	@OneToOne
+//	@OneToOne
+	@ManyToOne
 	private Student student;
 
 	public Student getStudent() {

@@ -51,7 +51,7 @@ public class Mappinghibernate {
 		Session session=factory.openSession();
 		Student st1=(Student)session.get(Student.class, 1L);
 		System.out.println(st1.getSname());
-		System.out.println(st1.getCourse().getCname());
+//		System.out.println(st1.getCourse().getCname());
 		
 		
 		//fetch student data from course
