@@ -3,6 +3,7 @@ package com.revature.model;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -19,7 +20,7 @@ public class Student {
 	private String sname;
 	
 //	@OneToOne(mappedBy = "student")
-	@OneToMany(mappedBy="student")
+	@OneToMany(mappedBy="student",fetch = FetchType.LAZY)
 	private List<Course> course;
 	
 

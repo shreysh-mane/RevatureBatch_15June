@@ -43,6 +43,9 @@ public class MappingOneToMany {
 //		session.close();
 		
 		
+		
+		
+		
 		SessionFactory sessionFactory= new Configuration().configure().buildSessionFactory();
 		Session session=sessionFactory.openSession();
 		Student s1=	(Student)session.get(Student.class,1L);
