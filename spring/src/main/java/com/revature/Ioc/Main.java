@@ -10,9 +10,9 @@ public class Main {
 		
 		ApplicationContext context=new ClassPathXmlApplicationContext("bean.xml");
 		Person p= context.getBean("person",Person.class);
-		System.out.println(p.getName());
-		System.out.println(p.getAddress());
-		System.out.println(p.getJob().getJname());
+//		System.out.println(p.getName());
+//		System.out.println(p.getAddress());
+		p.getJob().method();
 	
 		
 	}

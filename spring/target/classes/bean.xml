@@ -9,28 +9,43 @@
 
 
  
- <bean class="com.revature.Ioc.Person" name="person">
- 	<property name="name" value="Shreysh"></property>
- 	<property name="address" value="Chennai"></property>
+<!--  <bean class="com.revature.Ioc.Person" name="person"> -->
+ <!-- 	<property name="name" value="Shreysh"></property>
+ 	<property name="address" value="Chennai"></property> -->
  	
- 	<property name="job" ref="job1"></property>
+<!--  	<property name="job" ref="job1"></property> -->
  	
  	
  <!-- 	<constructor-arg value="Shreysh" ></constructor-arg>
  	<constructor-arg value="Chennai" ></constructor-arg> -->
- </bean>
+<!--  </bean> -->
+
+
+
+<!-- <bean class="com.revature.Ioc.Person" name="person" autowire="">
+
+</bean> -->
+
+<bean class="com.revature.Ioc.Person" name="person"></bean>
+
+<bean class="com.revature.Ioc.Job" name="job2"></bean>
+<bean class="com.revature.Ioc.Job" name="job"></bean>
+
+<context:annotation-config></context:annotation-config>
+
  
- <bean class="com.revature.Ioc.Job" name="job">
+<!-- <bean class="com.revature.Ioc.Job" name="job1">
  	<property name="jname" value="Trainer"></property>
  	<property name="jcompany" value="Revature"></property> 
- </bean>
+ </bean> -->
  
-  <bean class="com.revature.Ioc.Job" name="job1">
- 	<property name="jname" value="Systemadmin"></property>
+<!-- <bean class="com.revature.Ioc.Job" name="job2">
+ 	<property name="jname" value="sysadmin"></property>
  	<property name="jcompany" value="Revature"></property> 
- </bean>
+ </bean>  -->
+
  
-  <bean class="com.revature.looseCoupling.Toyota" name="engine"></bean>
+  <!-- <bean class="com.revature.looseCoupling.Toyota" name="engine"></bean> -->
 
 </beans>
 
