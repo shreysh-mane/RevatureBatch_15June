@@ -15,16 +15,14 @@ import com.revature.model.Userdata;
  * Hello world!
  *
  */
-public class App 
+public class SavingObject 
 
 {
     public static void main( String[] args )
     {
         
     	
-//    	org.hibernate.cfg.Configuration cf=new org.hibernate.cfg.Configuration();
-//    	cf.configure();
-//    	SessionFactory factory=cf.buildSessionFactory();
+
     	
 //    	Creating the object
     	Userdata user=new Userdata();
@@ -32,6 +30,11 @@ public class App
     	user.setUserName("chitrak");
     	user.setUserAddress("kolkata");
     	user.setUseremail("chitrak@gmail.com");
+    	
+    	//creating sessionFactory object
+//    	org.hibernate.cfg.Configuration cf=new org.hibernate.cfg.Configuration();
+//    	cf.configure();
+//    	SessionFactory factory=cf.buildSessionFactory();
     	
 //    	Creating obj of sessionFactory
     	SessionFactory factory=new Configuration().configure().buildSessionFactory();

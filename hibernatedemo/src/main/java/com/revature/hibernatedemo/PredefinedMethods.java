@@ -6,7 +6,7 @@ import org.hibernate.cfg.Configuration;
 
 import com.revature.model.Userdata;
 
-public class Test1 {
+public class PredefinedMethods {
 	
 //	Creating obj of sessionFactory
 	private static SessionFactory factory=new Configuration().configure().buildSessionFactory();
@@ -42,7 +42,7 @@ public class Test1 {
 		
 		
 		Session session=factory.openSession();
-		long userId=100L;
+		long userId=1L;
 		//initialize transaction
 		session.beginTransaction();
 		

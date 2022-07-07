@@ -8,7 +8,7 @@ import com.revature.model.Course;
 import com.revature.model.Student;
 
 public class Mappinghibernate {
-
+	//eg of oneToOne mapping
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		

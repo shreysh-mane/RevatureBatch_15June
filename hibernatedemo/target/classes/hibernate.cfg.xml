@@ -26,14 +26,24 @@
       
       <!--  to set the creation mode of your table -->
 	  <property name="hibernate.hbm2ddl.auto">update</property>
-	  <!-- update -->
-	  
-	  <!--  -->
+	  <!-- update:  at the time of saving obj if table is not present it will create the tabel
+	                if the table is present it will store the obj in that table itself --> 
+	  <!-- Create: wheather table is present in the db or not it will create a new table and store the obj -->
+	 
       <property name="hibernate.connection.pool_size">10</property>
+      
+      
+      <!-- Properties for second level cache -->
+      <property name="cache.use_second_Level_cache">true</property>
+ 	<property name="cache.region.factory_class">org.hibernate.cache.ehcache.internal.EhcacheRegionFactory</property>
+      
  	
 		<mapping class="com.revature.model.Userdata"/> 
 		<mapping class="com.revature.model.Student"/> 
 		<mapping class="com.revature.model.Course"/> 
+		<mapping class="com.revature.model.Emp"/> 
+		
+		<!-- To tell the hibernate that these class obj you have to store in db -->
  	
 </session-factory>
 </hibernate-configuration>
