@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+ 
+ <bean class="com.revature.Ioc.Person" name="person">
+ 	<property name="name" value="Shreysh"></property>
+ 	<property name="address" value="Chennai"></property>
+ 	
+ 	<property name="job" ref="job1"></property>
+ 	
+ 	
+ <!-- 	<constructor-arg value="Shreysh" ></constructor-arg>
+ 	<constructor-arg value="Chennai" ></constructor-arg> -->
+ </bean>
+ 
+ <bean class="com.revature.Ioc.Job" name="job">
+ 	<property name="jname" value="Trainer"></property>
+ 	<property name="jcompany" value="Revature"></property> 
+ </bean>
+ 
+  <bean class="com.revature.Ioc.Job" name="job1">
+ 	<property name="jname" value="Systemadmin"></property>
+ 	<property name="jcompany" value="Revature"></property> 
+ </bean>
+ 
+  <bean class="com.revature.looseCoupling.Toyota" name="engine"></bean>
+
+</beans>
+
+
+
