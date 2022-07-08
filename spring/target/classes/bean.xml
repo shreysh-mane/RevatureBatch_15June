@@ -22,14 +22,14 @@
 
 
 
-<!-- <bean class="com.revature.Ioc.Person" name="person" autowire="">
+<!-- <bean class="com.revature.Ioc.Person" name="person" autowire="byName">
 
 </bean> -->
 
 <bean class="com.revature.Ioc.Person" name="person"></bean>
 
 <bean class="com.revature.Ioc.Job" name="job2"></bean>
-<bean class="com.revature.Ioc.Job" name="job"></bean>
+<bean class="com.revature.Ioc.Job" name="job3"></bean>
 
 <context:annotation-config></context:annotation-config>
 
