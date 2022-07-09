@@ -1,0 +1,7 @@
+package com.revature.springdemo.model;
+
+
+
+public class User {
+
+}
