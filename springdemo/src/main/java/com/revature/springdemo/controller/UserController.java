@@ -113,6 +113,17 @@ public class UserController {
 		
 	}
 	
+	@GetMapping("/getallusers")
+	public List<User> getAllUser() {
+		
+		List<User> uslist=userServiceInterface.getAllUser();
+		return uslist;
+	}
+	
+	@GetMapping("/getuser/{id}")
+	public User getuser(@PathVariable Long id) {
+		return userServiceInterface.getUser(id);
+	}
 	
 	
 	
