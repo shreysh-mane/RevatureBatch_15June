@@ -11,4 +11,10 @@ public interface UserServiceInterface {
 	List<User> getAllUser();
 
 	User getUser(Long id);
+
+	void findUserByName(String name);
+
+	void findUserByAddress(String address);
+
+	void fingUserByQuery(String name);
 }

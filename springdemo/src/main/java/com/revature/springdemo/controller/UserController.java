@@ -108,9 +108,7 @@ public class UserController {
 	
 	@PostMapping("/saveuser")
 	public void saveuser(@RequestBody User user) {
-		
 		userServiceInterface.saveUseService(user);
-		
 	}
 	
 	@GetMapping("/getallusers")
@@ -126,6 +124,18 @@ public class UserController {
 	}
 	
 	
+	@GetMapping("findByName/{name}")
+	public void fingUserByName(@PathVariable String name) {
+		userServiceInterface.findUserByName(name);
+	}
+	
+	@GetMapping("findbyaddress/{address}")
+	public void fingUserByAddress(@PathVariable String address) {
+		userServiceInterface.findUserByAddress(address);
+	}
 	
 	
-}
+	@GetMapping("findbyquery/{name}")
+	public void fingUserByQuery(@PathVariable String name) {
+		userServiceInterface.fingUserByQuery(name);
+	}}

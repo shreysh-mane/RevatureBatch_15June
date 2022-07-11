@@ -41,8 +41,41 @@ public class UserService implements UserServiceInterface {
 			return u;
 		}
 		
+		
 		return null;
 	}
-	
 
+	@Override
+	public void findUserByName(String name) {
+		// TODO Auto-generated method stub
+		List<User> uslist=userRepository.findByName(name);
+		for(User user:uslist) {
+			System.out.println(user.getName());
+			System.out.println(user.getUid());
+		}
+	}
+
+	@Override
+	public void findUserByAddress(String address) {
+		// TODO Auto-generated method stub
+		List<User> uslist=userRepository.findByAddress(address);
+		for(User user:uslist) {
+			System.out.println(user.getName());
+			System.out.println(user.getUid());
+		}
+	}
+
+	@Override
+	public void fingUserByQuery(String name) {
+		// TODO Auto-generated method stub
+		
+		List<User> uslist=userRepository.findUserByQuery(name);
+		for(User user:uslist) {
+			System.out.println(user.getName());
+			System.out.println(user.getUid());
+		}
+	}
+	
+	
+	
 }
