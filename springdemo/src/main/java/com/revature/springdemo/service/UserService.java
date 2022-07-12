@@ -25,9 +25,9 @@ public class UserService implements UserServiceInterface {
 	@Override
 	public List<User> getAllUser() {
 		List<User> userlist=userRepository.findAll();
-		for(User u: userlist) {
-			System.out.println(u.getName());
-		}
+//		for(User u: userlist) {
+//			System.out.println(u.getName());
+//		}
 		return userlist;
 	}
 
