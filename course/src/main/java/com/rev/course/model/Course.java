@@ -1,0 +1,25 @@
+package com.rev.course.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Course {
+ @Id
+ private long cid;
+ private String coursename;
+public long getCid() {
+	return cid;
+}
+public void setCid(long cid) {
+	this.cid = cid;
+}
+public String getCoursename() {
+	return coursename;
+}
+public void setCoursename(String coursename) {
+	this.coursename = coursename;
+}
+}
