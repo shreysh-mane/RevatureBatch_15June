@@ -1,0 +1,13 @@
+<form #userForm="ngForm" (ngSubmit)="sendData(userForm.value)">
+    <!-- ngModel used to add feild to form -->
+    <input type="text" name="username" ngModel>
+    <br><br>
+    <input tyep="text" name="address" ngModel>
+    <br><br>
+    
+    <br><br>
+    <button>Submit</button>
+</form>
+
+<br>
+<a routerLink="/" ><button>HOME</button></a>
